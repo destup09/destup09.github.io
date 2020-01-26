@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$primary-color: #35353b;
+$secondary-color: #414148;
+$accent-color: #359cac;
+$btns-color: #303036;
+$accent-color2: #2e2e33;
+$text-color: #cccbd1;
+
+$breakpoint-fullhd: 1980px;
+$breakpoint-hd: 1280px;
+$breakpoint-tablet: 768px;
+$breakpoint-tablet2: 1024px;
+
+button:focus {
+  outline: 0;
+}
+
+@mixin transition-ease {
+  transition: 0.5s ease-in-out;
+}
+
+@mixin transition-ease-fast {
+  transition: 0.25s ease-in-out;
+}
+
+@mixin transition-ease-supersonic {
+  transition: 0.15s ease-in-out;
+}

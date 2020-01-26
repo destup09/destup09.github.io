@@ -1,0 +1,389 @@
+html {
+  font-family: "Segoe UI";
+}
+
+.wrapper {
+  width: 100%;
+  height: 130vh;
+  background: $primary-color;
+}
+
+.landing-page {
+  height: 82vh;
+  width: 100%;
+
+  .top-wrapper {
+    display: flex;
+    background: url("../files/bg.png") no-repeat center top;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin-top: -6%;
+
+    .left {
+      width: 50%;
+      height: 65vh;
+      margin-top: 6%;
+
+      .lang-select-wrapper {
+        display: flex;
+        position: fixed;
+        top: 41%;
+        left: 2rem;
+
+        .lang-pl,
+        .lang-en {
+          width: 2.7rem;
+          height: 2.7rem;
+
+          border-radius: 5rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 0.8rem;
+          @include transition-ease;
+          cursor: pointer;
+
+          &:hover {
+            background: $accent-color;
+            color: white;
+          }
+        }
+      }
+
+      .logo {
+        width: 55%;
+        height: 55%;
+        background: url("../files/logoLower.png") center center no-repeat;
+        @include transition-ease;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -5%;
+        margin-left: -10%;
+
+        .logo-upper {
+          width: 250px;
+          height: 250px;
+          margin: 90px 0 0 90px;
+          @include transition-ease;
+          background: url("../files/logoUpper.png") center center no-repeat;
+        }
+      }
+
+      .skills-wrapper {
+        width: 60%;
+        height: 30%;
+        background: $secondary-color;
+        margin-left: 17.5%;
+        border-radius: 2rem;
+        margin-top: 8%;
+        box-shadow: -4px 4px 5px 0px rgba(0, 0, 0, 0.54);
+
+        h2 {
+          text-align: center;
+          padding-top: 1rem;
+          color: white;
+          text-shadow: -3px 3px 0px rgba(53, 156, 172, 0.3);
+        }
+
+        .uls {
+          width: 100%;
+          display: flex;
+          margin-top: 1.5rem;
+          justify-content: space-evenly;
+          color: #ebebeb;
+        }
+      }
+    }
+
+    .right {
+      width: 50%;
+      height: 65vh;
+      margin-top: 6%;
+
+      .info-wrapper {
+        margin: 0 auto;
+        width: 70%;
+        height: 90%;
+        background: $secondary-color;
+        border-radius: 0 0 0 3rem;
+        color: white;
+        text-align: center;
+        box-shadow: -4px 4px 5px 0px rgba(0, 0, 0, 0.54);
+
+        h1 {
+          padding-top: 4.5rem;
+
+          text-shadow: -4px 4px 0px rgba(53, 156, 172, 0.3);
+        }
+
+        h2 {
+          font-size: 2rem;
+          padding-bottom: 1rem;
+          text-shadow: -4px 4px 0px rgba(53, 156, 172, 0.3);
+        }
+
+        p {
+          padding: 0 2.5rem 0 2.5rem;
+          color: #ebebeb;
+        }
+
+        .links-wrapper {
+          width: 50%;
+          height: 20%;
+          margin: 0 auto;
+
+          .icons {
+            display: flex;
+            margin-top: 15%;
+            justify-content: center;
+
+            .fa-github {
+              font-size: 3rem;
+              @include transition-ease;
+              cursor: pointer;
+
+              &:hover {
+                transform: translateY(-3px);
+                color: $accent-color;
+                text-shadow: 0px 7px 6px rgba(0, 0, 0, 0.2);
+              }
+            }
+
+            .linkedin {
+              margin: 0 2rem 0 2rem;
+            }
+
+            .twitter,
+            .linkedin {
+              background: white;
+              height: 3rem;
+              width: 3rem;
+              border-radius: 3rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              @include transition-ease;
+              cursor: pointer;
+
+              &:hover {
+                transform: translateY(-3px);
+                background: $accent-color;
+                box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.2);
+              }
+
+              .fab {
+                font-size: 2rem;
+                color: $secondary-color;
+              }
+            }
+          }
+
+          .btn-resume {
+            width: 8rem;
+            height: 3rem;
+            background: $btns-color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5rem;
+            margin: 1.5rem auto 1rem auto;
+            cursor: pointer;
+
+            &-inner {
+              width: 7rem;
+              height: 2.2rem;
+              background: $btns-color;
+              box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.54);
+              border-radius: 5rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              @include transition-ease;
+
+              &:hover {
+                transform: translateY(-3px);
+                box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.54);
+              }
+            }
+          }
+
+          a {
+            color: #ebebeb;
+          }
+        }
+      }
+    }
+  }
+}
+
+.projects-wrapper {
+  width: 100%;
+  height: 50%;
+  background: $primary-color;
+
+  h2 {
+    text-align: center;
+    color: white;
+    text-shadow: 0px 7px 6px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2%;
+  }
+
+  .projects {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    background: $primary-color;
+
+    .project {
+      background: $secondary-color;
+      min-width: 400px;
+      width: 21.5%;
+      height: 80%;
+      border-radius: 2rem;
+      box-shadow: -4px 4px 5px 0px rgba(0, 0, 0, 0.54);
+
+      h3 {
+        text-align: center;
+        padding-top: 0.5rem;
+        color: $text-color;
+      }
+
+      .proj1-img,
+      .proj2-img,
+      .proj3-img {
+        width: 90%;
+        height: 40%;
+        min-width: 368px;
+        min-height: 200px;
+        background: $btns-color;
+        margin: 0.5rem auto 0 auto;
+        border-radius: 1.5rem;
+      }
+
+      .proj-desc {
+        height: 40%;
+        width: 90%;
+        margin: 1.2rem auto 0 auto;
+      }
+
+      .proj-btns {
+        width: 90%;
+        height: 10%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        &-inner {
+          width: 4rem;
+          height: 4rem;
+          background: $btns-color;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: -2rem 1rem 0 1rem;
+          border-radius: 5rem;
+          cursor: pointer;
+
+          .fas-wrapper {
+            width: 3rem;
+            height: 3rem;
+            background: $btns-color;
+            box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.54);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5rem;
+            @include transition-ease;
+
+            &:hover {
+              transform: translateY(-5px);
+              box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.54);
+            }
+
+            .fas,
+            .far {
+              color: #ebebeb;
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background: $accent-color2;
+  height: 7%;
+  min-height: 80px;
+  width: 100%;
+}
+
+.bg-textures {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35%;
+}
+
+.bg-dots {
+  background: url("../files/dots2.png") no-repeat;
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 10%;
+  height: 80%;
+}
+
+.lang-pl,
+.lang-en {
+  background: $text-color;
+}
+
+.info-h1 {
+  font-size: 5rem;
+}
+
+.lang-clicked {
+  background-color: $accent-color;
+  color: white;
+}
+
+//////////////////
+// 4k
+
+@media (min-width: 4096px) {
+  .skills-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+      font-size: 4rem;
+      margin-top: -3rem;
+    }
+
+    ul {
+      margin-top: 1rem;
+
+      li {
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .right {
+    .info-content {
+      h1 {
+        font-size: 9rem;
+      }
+    }
+  }
+}
