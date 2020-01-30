@@ -1,0 +1,441 @@
+.wrapper {
+  height: 100vh;
+  width: 100%;
+}
+
+.menu-toggle {
+  margin-top: 18px;
+}
+
+.invisible {
+  display: none;
+}
+
+.menu-hide {
+  margin-left: -800px;
+}
+
+.m {
+  width: 820px;
+  height: 800px;
+  position: absolute;
+  top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include transition-ease;
+
+  .m-toggle {
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    font-size: 55px;
+    color: $secondary-color;
+    cursor: pointer;
+
+    .fas {
+      @include transition-ease;
+    }
+
+    .lefty {
+      transform: rotate(180deg);
+      margin-left: -21px;
+    }
+  }
+
+  .m-l {
+    width: 120px;
+    height: 100%;
+    background: white;
+
+    p {
+      text-align: center;
+      padding: 20px;
+      cursor: pointer;
+      font-family: "Lato";
+
+      &:hover {
+        background: #f2f2f2;
+      }
+    }
+  }
+
+  .btn-clicked {
+    background: $accent-color;
+  }
+
+  .m-r {
+    .div-options,
+    .text-options,
+    .image-options,
+    .background-options {
+      position: absolute;
+      top: 0px;
+      left: 120px;
+      width: 680px;
+      height: 800px;
+      background: $accent-color;
+      font-family: "Lato";
+      border-radius: 0 15px 15px 0;
+    }
+
+    .div-options {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        text-align: center;
+        padding: 20px;
+        background: $secondary-color;
+        color: white;
+        margin-bottom: 15px;
+      }
+
+      .top-p {
+        border-radius: 0 15px 0 0;
+      }
+
+      .div-shapes-container {
+        width: 80%;
+        height: 120px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+//////////////
+//TEXT CREATE
+
+.create-new-text {
+  background: none;
+  width: 120px;
+  height: 40px;
+  border: 1px solid $secondary-color;
+  font-family: "Roboto";
+  font-size: 18px;
+  transition: background-color 0.5s ease-in-out;
+  margin: 20px auto 20px auto;
+  text-align: center;
+  display: block;
+
+  &:hover {
+    background: #f2f2f2;
+  }
+}
+
+.text-input-wrapper {
+  color: $secondary-color;
+  margin: 10px auto 20px auto;
+  width: 500px;
+  height: 130px;
+
+  .text-input {
+    resize: none;
+    width: 500px;
+    height: 130px;
+  }
+}
+
+.wrap-options,
+.color-options-wrapper {
+  margin: 0 auto;
+  width: 380px;
+  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.font-size-wrapper,
+.font-family-wrapper,
+.font-color-wrapper,
+.background-color-wrapper {
+  width: 150px;
+  height: 100px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.color-options-wrapper {
+  display: flex;
+}
+
+.background-color-wrapper {
+  margin-top: -11px;
+}
+
+.color-preview,
+.background-preview {
+  width: 25px;
+  height: 25px;
+  margin: 8px auto 0 auto;
+  border: 1px solid #e2e2e2;
+}
+
+.font-size-input,
+.select-font {
+  margin-top: 5px;
+}
+
+.select-font {
+  width: 140px;
+}
+
+.wrap-options {
+  display: flex;
+}
+
+//////////////
+//  SHAPES:
+
+//div
+.options {
+  cursor: pointer;
+}
+
+.div-shape1 {
+  width: 55px;
+  height: 55px;
+  background: #333333;
+}
+
+.div-shape2 {
+  width: 55px;
+  height: 55px;
+  background: #333333;
+  border-radius: 10px;
+}
+
+.div-shape3 {
+  width: 55px;
+  height: 55px;
+  background: #333333;
+  border-radius: 1000px;
+}
+
+.div-shape4 {
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 55px solid #333333;
+}
+
+.div-shape5 {
+  width: 55px;
+  height: 55px;
+  background: none;
+  border: 2px solid #333333;
+}
+
+//line
+
+.div-line-wrapper {
+  width: 100px;
+  height: 10px;
+  background: #777777;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+.div-line1 {
+  width: 100px;
+  height: 0;
+  border-bottom: 5px solid #333333;
+}
+
+.div-line2 {
+  width: 100px;
+  height: 0;
+  border-bottom: 5px dashed #333333;
+}
+
+.div-line3 {
+  width: 100px;
+  height: 0;
+  border-bottom: 5px dotted #333333;
+}
+
+.div-line4 {
+  width: 100px;
+  height: 0;
+  border-bottom: 5px double #333333;
+}
+
+.border {
+  border: 1px solid $secondary-color;
+}
+
+////////////
+//BUTTONS
+.btn1 {
+  width: 100px;
+  height: 50px;
+}
+
+//////////////
+// IMAGES
+
+.image-options {
+  .image-inner-wrapper {
+    height: 100%;
+    width: 100%;
+
+    .image-top {
+      margin-left: 20px;
+      margin-top: 15px;
+    }
+  }
+}
+
+.api-images-wrapper {
+  width: 600px;
+  height: 700px;
+  background: $accent-color;
+  margin: 15px auto 0 auto;
+  overflow-y: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    width: 8px;
+    border-radius: 8px;
+    background: #8f8f8f;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    width: 6px;
+    border-radius: 8px;
+    background: $secondary-color;
+  }
+}
+
+.api-img {
+  padding: 10px;
+  cursor: pointer;
+  width: 280px;
+  height: auto;
+}
+////////////
+//BACKGROUND
+
+.bg-inner-wrapper {
+  width: 380px;
+  height: 380px;
+  margin: 0 auto;
+}
+
+////////////
+//WORK AREA
+
+.work-area {
+  width: 100%;
+  height: 100vh;
+  background: darkgray;
+}
+
+.config-btn {
+  width: 18px;
+  height: 18px;
+  background: black;
+  position: absolute;
+  top: -6px;
+  left: 25px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  width: 18px;
+  height: 18px;
+  background: black;
+  position: absolute;
+  top: -6px;
+  left: 3px;
+  cursor: pointer;
+}
+
+.deleteQuestion {
+  width: 300px;
+  height: 150px;
+  background: #fff;
+  position: absolute;
+  left: 100px;
+  right: 0;
+  top: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid $secondary-color;
+  z-index: 3;
+
+  p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    padding: 15px;
+  }
+
+  .delYes,
+  .delNo {
+    background: $secondary-color;
+    border: none;
+    color: $primary-color;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .delYes {
+    margin-right: 10px;
+  }
+
+  .delNo {
+    margin-left: 10px;
+  }
+
+  .btn-wrapper {
+    width: 140px;
+    height: 30px;
+    margin-left: 85px;
+    margin-top: 10px;
+  }
+}
+
+.resizerSe {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: se-resize;
+  z-index: 2;
+}
+
+.resizerEast {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 10px;
+  cursor: e-resize;
+  z-index: 1;
+}
+
+.resizerSouth {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  cursor: s-resize;
+  z-index: 1;
+}

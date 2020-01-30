@@ -340,6 +340,11 @@ html {
         background: $btns-color;
         margin: 0.5rem auto 0 auto;
         border-radius: 1.5rem;
+
+        img {
+          width: 320px;
+          height: 180px;
+        }
       }
 
       .proj-desc {
